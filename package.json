@@ -1,0 +1,29 @@
+{
+  "name": "protractor-test-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "conf.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilpandeykiet/protractor-test-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anilpandeykiet/protractor-test-framework/issues"
+  },
+  "homepage": "https://github.com/anilpandeykiet/protractor-test-framework#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.3.13",
+    "@types/node": "^12.0.10",
+    "fs": "0.0.1-security",
+    "jasmine": "^3.4.0",
+    "node": "^12.5.0",
+    "properties-reader": "^0.2.0",
+    "protractor": "^5.4.2",
+    "protractor-beautiful-reporter": "^1.2.8"
+  }
+}
