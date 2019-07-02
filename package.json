@@ -4,7 +4,8 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test": ""
+    "test": "webdriver-manager update; protractor conf.js",
+    "test_local": "webdriver-manager update; protractor conf.js"
   },
   "repository": {
     "type": "git",
