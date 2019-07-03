@@ -21,7 +21,7 @@ exports.config = {
 
     // Spec patterns are relative to the current working directory when
     // protractor is called.
-    specs: ['tests/firstTest.js'],
+    specs: ['tests/CustomerLoginTest.js'],
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
@@ -30,7 +30,7 @@ exports.config = {
     },
     onPrepare: () => {
         browser.driver.manage().window().setSize(1920, 1080);
-       // browser.ignoreSynchronization = true;
+        // browser.ignoreSynchronization = true;
         browser.waitForAngularEnabled(true);
     }
 };
