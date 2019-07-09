@@ -4,7 +4,7 @@
   "description": "",
   "main": "conf.js",
   "scripts": {
-    "test": "webdriver-manager update; protractor conf.js",
+    "test": "webdriver-manager update; node_modules/.bin/tsc; protractor outputDir/conf.js",
     "test_local": "protractor conf.js"
   },
   "repository": {
@@ -25,6 +25,7 @@
     "node": "^12.5.0",
     "properties-reader": "^0.2.0",
     "protractor": "^5.4.2",
-    "protractor-beautiful-reporter": "^1.2.8"
+    "protractor-beautiful-reporter": "^1.2.8",
+    "typescript": "^3.5.3"
   }
 }

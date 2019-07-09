@@ -1,5 +1,5 @@
-var uiControl = require("../web-controls/ui-controls");
-
+import {by, element} from "protractor";
+import {UiControls} from "../web-controls/ui-controls";
 
 var LoginPageLocators = {
     ALL_BUTTONS: element.all(by.css(".center button")),
@@ -9,29 +9,26 @@ var LoginPageLocators = {
 };
 
 
-var LoginPagePO = function () {
-
-    this.getAllButtonsCount = function () {
+export class LoginPagePO {
+    static getAllButtonsCount() {
         console.log("Getting all buttons count on Login page.");
         return LoginPageLocators.ALL_BUTTONS.count();
-    };
+    }
 
-    this.clickCustomerLogin = function () {
+    static clickCustomerLogin() {
         console.log("CLicking Login CUSTOMER_LOGIN_BTN");
         return LoginPageLocators.CUSTOMER_LOGIN_BTN.click();
     };
 
-    this.clickBankManagerLogin = function () {
+    static clickBankManagerLogin () {
         console.log("CLicking Login BANK_MANAGER_LOGIN_BTN");
         // return LoginPageLocators.BANK_MANAGER_LOGIN_BTN.click();
-        return uiControl.click(LoginPageLocators.BANK_MANAGER_LOGIN_BTN);
+        return UiControls.click(LoginPageLocators.BANK_MANAGER_LOGIN_BTN);
     };
 
-    this.clickHomeButton = function () {
+    static clickHomeButton() {
         console.log("CLicking Login HOME_BTN");
-        return uiControl.click(LoginPageLocators.HOME_BTN);
+        return UiControls.click(LoginPageLocators.HOME_BTN);
         //browser.manage().alertIsPresent().
     };
-};
-
-module.exports = new LoginPagePO();
+}
