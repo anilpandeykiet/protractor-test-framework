@@ -1,3 +1,5 @@
+import {browser} from "protractor";
+
 exports.config = {
     directConnect: true,
 
