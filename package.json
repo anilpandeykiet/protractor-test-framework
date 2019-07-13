@@ -5,7 +5,7 @@
   "main": "conf.js",
   "scripts": {
     "test": "webdriver-manager update; node_modules/.bin/tsc; protractor outputDir/conf.js",
-    "test_local": "protractor conf.js"
+    "test_local": "protractor outputDir/conf.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "properties-reader": "^0.2.0",
     "protractor": "^5.4.2",
     "protractor-beautiful-reporter": "^1.2.8",
+    "selenium-webdriver": "^4.0.0-alpha.4",
     "typescript": "^3.5.3"
   }
 }

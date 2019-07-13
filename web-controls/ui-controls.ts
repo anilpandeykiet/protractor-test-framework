@@ -1,6 +1,7 @@
-import {browser} from "protractor";
+import {browser, ElementFinder} from "protractor";
 
 export class UiControls {
+
     static click(elementToClick) {
         return elementToClick.click();
     };
@@ -19,6 +20,8 @@ export class UiControls {
     static getCurrentUrl() {
         return browser.getCurrentUrl();
     }
+
+
 }
 
 

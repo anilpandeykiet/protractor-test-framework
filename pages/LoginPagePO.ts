@@ -1,4 +1,4 @@
-import {by, element} from "protractor";
+import {by, element, protractor} from "protractor";
 import {UiControls} from "../web-controls/ui-controls";
 
 var LoginPageLocators = {
@@ -12,7 +12,9 @@ var LoginPageLocators = {
 export class LoginPagePO {
     static getAllButtonsCount() {
         console.log("Getting all buttons count on Login page.");
-        return LoginPageLocators.ALL_BUTTONS.count();
+      return LoginPageLocators.ALL_BUTTONS.count();
+
+
     }
 
     static clickCustomerLogin() {
